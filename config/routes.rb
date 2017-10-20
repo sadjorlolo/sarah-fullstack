@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  resources :teas
   resources :examples, except: %i[new edit]
   post '/sign-up' => 'users#signup'
   post '/sign-in' => 'users#signin'
@@ -9,4 +10,5 @@ Rails.application.routes.draw do
   resources :users, only: %i[index show]
 
   resources :reviews, except: %i[new edit]
+  resources :teas, only: %i[index show]
 end
