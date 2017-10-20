@@ -46,6 +46,6 @@ class TeasController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def tea_params
-      params.require(:tea).permit(:name, :brand, :type, :packaging)
+      params.require(:tea).permit(:name, :brand, :tea_type, :packaging)
     end
 end
