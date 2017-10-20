@@ -1,4 +1,4 @@
 class Review < ApplicationRecord
   belongs_to :user
-  belongs_to :tea, optional: true
+  belongs_to :tea
 end
