@@ -8,3 +8,4 @@ curl --include --request POST "http://localhost:4741/teas" \
       "packaging": "'"${PACKAGE}"'"
     }
   }'
+# Users should not be able to create new Teas.

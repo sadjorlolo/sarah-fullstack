@@ -5,3 +5,5 @@ curl --include --request PATCH "http://localhost:4741/teas/${ID}" \
       "tea_type": "'"${TEA_TYPE}"'"
     }
   }'
+
+  # Users should not be able to update any Teas.
