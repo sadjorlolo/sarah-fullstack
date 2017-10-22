@@ -3,7 +3,6 @@ curl --include --request POST "http://localhost:4741/reviews" \
   --header "Authorization: Token token=$TOKEN" \
   --data '{
     "review": {
-      "tea_name": "'"${TEA}"'",
       "water_temp": "'"${TEMP}"'",
       "steep_time": "'"${STEEP}"'",
       "rating": "'"${RATING}"'",
