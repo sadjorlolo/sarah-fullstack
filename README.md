@@ -29,6 +29,17 @@ such as water temperature, steep time, rating, and notes. After saving, the
 newly created review is available in the list of all reviews associated with
 that user. A single review must be selected before being updated or deleted.
 
+The application works through a series of back-end requests to the server. If a
+new user is created, the email and password are passed through the server to the
+API in the form of a POST request. A signed in user can access all reviews or
+only a single review by sending a GET request, with or without a review id.
+Using a specific review request, a user can send a DELETE request to delete a
+review or a PATCH request to update a review. By creating a brand new review, a
+user is sending a form full of data in a POST request.
+
+All of these are available actions for a signed in user because they are
+authorized with a token upon successful sign-in.
+
 ## Development Process
 
 The developmemt process for this application begin with designing the setup of
