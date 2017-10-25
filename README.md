@@ -67,6 +67,22 @@ controllers accept all the needed parameters? Were there any spelling
 errors? Were the associations reflected in the models? What information was
 my serializer returning to the user?
 
+## Back-end API Endpoints
+
+| Verb   | URI Pattern            | Controller#Action   |
+|:-------|:-----------------------|:--------------------|
+| POST   | `/sign-up`             | `users#signup`      |
+| POST   | `/sign-in`             | `users#signin`      |
+| DELETE | `/sign-out/:id`        | `users#signout`     |
+| PATCH  | `/change-password/:id` | `users#changepw`    |
+| GET    | `/reviews`             | `reviews#index`     |
+| GET    | `/reviews/:id`         | `reviews#show`      |
+| POST   | `/reviews`             | `reviews#create`    |
+| PATCH  | `/reviews/:id`         | `reviews#update`    |
+| DELETE | `/reviews/:id`         | `reviews#destroy`   |
+| GET    | `/teas`                | `teas#index`        |
+| GET    | `/teas/:id`            | `teas#show`         |
+
 ## Technologies Used
 
 The following technologies were used for the creation of this application:
