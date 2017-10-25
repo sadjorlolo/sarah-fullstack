@@ -66,6 +66,9 @@ The following technologies were used for the creation of this application:
   console.
 - GitHub pages, for front-end hosting
 
+For the front-end, the following technologies were used:
+- HTML, SCSS, AJAX, and jQuery.
+
 
 ## Future Iterations
 
